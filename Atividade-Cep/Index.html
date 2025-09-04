@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Buscador de CEP</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    label { display: block; margin-top: 10px; }
+    input { padding: 5px; width: 300px; }
+    button { margin-top: 10px; padding: 8px 12px; }
+    #msg { margin-top: 10px; color: blue; }
+  </style>
+</head>
+<body>
+  <h2>Buscador de CEP</h2>
+
+  <label for="cep">CEP:</label>
+  <input type="text" id="cep" placeholder="Digite o CEP (ex: 01001000)">
+  <button id="btn-buscar-cep">Buscar</button>
+
+  <p id="msg"></p>
+
+  <label for="logradouro">Logradouro:</label>
+  <input type="text" id="logradouro" readonly>
+
+  <label for="bairro">Bairro:</label>
+  <input type="text" id="bairro" readonly>
+
+  <label for="cidade">Cidade:</label>
+  <input type="text" id="cidade" readonly>
+
+  <label for="uf">UF:</label>
+  <input type="text" id="uf" readonly>
+
+  <!-- Importa o arquivo JS externo -->
+  <script src="script.js"></script>
+</body>
+</html>
